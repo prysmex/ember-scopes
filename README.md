@@ -102,7 +102,7 @@ class ComponentA extends GlimmerComponent {
 	constructor() {
 		super(...arguments);
 		//We suppose Model User Class have a scope defined.
-		this.store.for('user').biggerThan('age', 10);
+		this.store.for('user').biggerThan('age', 10).peekAll();
 	}
 }
 ```
