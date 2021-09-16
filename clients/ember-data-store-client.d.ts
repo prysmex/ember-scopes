@@ -4,7 +4,7 @@ declare type ExtraOptions = Record<string, unknown>;
 interface ModelKlass extends ObjectWithScopes {
   modelName: string;
 }
-export declare class EmberDataStoreClient extends ClientWrapper {
+export declare class EmberDataStoreClientWrapper extends ClientWrapper {
   query(
     queries: Array<QueryGenerator>,
     klass: ModelKlass,

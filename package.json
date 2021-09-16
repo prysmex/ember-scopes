@@ -1,13 +1,14 @@
 {
   "name": "ember-scopes",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Scopes for ember",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "scopes"
   ],
-  "repository": "",
+  "repository": "https://github.com/prysmex/ember-scopes",
   "license": "MIT",
-  "author": "",
+  "author": "betocantu93",
   "directories": {
     "doc": "doc",
     "test": "tests"

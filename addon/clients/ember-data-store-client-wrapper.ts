@@ -5,7 +5,7 @@ import { QueryGenerator, ObjectWithScopes } from '../utils/query';
 
 type ExtraOptions = Record<string, unknown>;
 
-interface EmberDataWrapperClient<R> extends WrappedClient<R> {
+interface EmberDataWrappedClient<R> extends WrappedClient<R> {
   query(modelName: string, options: ExtraOptions): Array<R>;
   queryRecord(modelName: string, options: ExtraOptions): R;
   peekAll(modelName: string, options: ExtraOptions): Array<R>;
@@ -16,8 +16,8 @@ interface ModelKlass extends ObjectWithScopes {
   modelName: string;
 }
 
-export class EmberDataStoreClient<
-  T extends EmberDataWrapperClient<R>,
+export class EmberDataStoreClientWrapper<
+  T extends EmberDataWrappedClient<R>,
   R
 > extends ClientWrapper<T> {
   query(
