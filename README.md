@@ -25,7 +25,7 @@ const StoreService = {
 
 //First lets define a custom ClientWrapper that will act as middleware to the provided client
 class StoreWrapper extends ClientWrapper {
-  peekAll(queries, klass, modelName, opts) {
+  peekAll(queries, klass, opts) {
     //[{ name: 'Alberto', age: 15 }, { name: 'Daniel', age: 30 }, { name: 'Humberto', age: 50 }]
     const collection = this.client.peekAll();
 
@@ -102,7 +102,7 @@ class ComponentA extends GlimmerComponent {
 	constructor() {
 		super(...arguments);
 		//We suppose Model User Class have a scope defined.
-		this.store.for('user').biggerThan('age', 10);
+		this.store.for('user').biggerThan('age', 10).peekAll();
 	}
 }
 ```
