@@ -29,13 +29,13 @@
     "postpack": "ember ts:clean"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1",
     "ember-cli-typescript": "^4.2.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.4.2",
     "@embroider/test-setup": "^0.43.5",
